@@ -33,17 +33,15 @@ jQuery(document).ready(function($) {
 jQuery(function($) {
     $('.page-header').prepend('<img src="'+ tfVars['header_bg_src'] +'" alt="" class="testimage hidden">');
 
-    $('.testimage').load(function(){
-        $(".main-header .spinner, .main-header .testimage").remove();
-        $(".page-header, .site-logo, .primary-navigation").removeClass('invisible').addClass('animated fadeIn');
+    $(".main-header .spinner, .main-header .testimage").remove();
+    $(".page-header, .site-logo, .primary-navigation").removeClass('invisible').addClass('animated fadeIn');
 
-        setTimeout(function(){
-            $(".page-title-before").removeClass('invisible').addClass('animated fadeInDown');
-            $(".page-title").removeClass('invisible').addClass('animated fadeInLeft');
-            $(".page-subtitle").removeClass('invisible').addClass('animated fadeInRight');
-            $("#search-form").removeClass('invisible').addClass('animated fadeInUp');
-        }, 400);
-    });
+    setTimeout(function(){
+        $(".page-title-before").removeClass('invisible').addClass('animated fadeInDown');
+        $(".page-title").removeClass('invisible').addClass('animated fadeInLeft');
+        $(".page-subtitle").removeClass('invisible').addClass('animated fadeInRight');
+        $("#search-form").removeClass('invisible').addClass('animated fadeInUp');
+    }, 400);
 });
 
 /**
