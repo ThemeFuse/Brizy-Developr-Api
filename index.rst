@@ -46,11 +46,4 @@ The licenses for most software are designed to take away your freedom to share a
 .. toctree::
     :hidden:
 
-    convention/index
     options/index
-    extensions/index
-    components/index
-    helpers/index
-    manifest/index
-    extension/index
-    hooks/index
