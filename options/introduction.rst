@@ -64,7 +64,7 @@ Usage
 .. code-block:: javascript
 
     {
-      id: "my-option",
+      id: "myOption",
       type: "colorPicker",
       label: "Set the color",
       className: "my-class",
