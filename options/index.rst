@@ -5,3 +5,4 @@ Options
     :hidden:
 
     introduction
+    list/colorPicker
