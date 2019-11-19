@@ -58,9 +58,11 @@ Usage
       className: "my-class",
       devices: "desktop",
       states: ["normal", "hover"],
-      helper: true,
-      helperContent: "Set the header background color",
-      helperPosition: "top-left",
+      helper: {
+        enabled: true,
+        content: "Set the header background color",
+        position: "top-left",
+      },
       config: {
         opacity: false
       },
