@@ -6,3 +6,4 @@ Options
 
     introduction
     list/colorPicker
+    list/boxShadow
