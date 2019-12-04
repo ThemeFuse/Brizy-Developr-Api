@@ -50,6 +50,15 @@ Value
 | horizontal | ``number``  | ``0``       | Box shadow horizontal value, number                                          |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
+Minimal Usage
+-----
+
+.. code-block:: javascript
+
+    {
+      id: "boxShadow",
+      type: "boxShadow"
+    }
 
 Usage
 -----
@@ -63,23 +72,13 @@ Usage
         opacity: true,
       },
       value: {
-        value: "outset",
+        type: "outset",
         hex: "#000000",
         opacity: 1,
         palette: "",
         blur: 4,
         spread: 2,
         vertical: 1,
-        vertical: 1,
+        horizontal: 1,
       }
-    }
-
-Minimal Usage
------
-
-.. code-block:: javascript
-
-    {
-      id: "boxShadow",
-      type: "boxShadow"
     }
