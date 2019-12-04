@@ -36,6 +36,16 @@ Value
 +----------+-------------+-------------+--------------------------------------+
 
 
+Minimal Usage
+-----
+
+.. code-block:: javascript
+
+    {
+      id: "color",
+      type: "colorPicker",
+    }
+
 Usage
 -----
 
@@ -45,10 +55,11 @@ Usage
       id: "color",
       type: "colorPicker",
       config: {
-        opacity: true,
+        opacity: false,
       },
       value: {
-        hex: "#000000",
-        opacity: 1
+        hex: "#333333",
+        opacity: 0.5,
+        palette: ""
       }
     }
