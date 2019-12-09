@@ -5,5 +5,6 @@ Options
     :hidden:
 
     introduction
-    list/colorPicker
+    list/border
     list/boxShadow
+    list/colorPicker

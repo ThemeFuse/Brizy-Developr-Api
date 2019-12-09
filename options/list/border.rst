@@ -1,7 +1,7 @@
-Box Shadow
+Border
 ============
 
-Box shadow option type.
+Border option type.
 
 Config
 ------
@@ -18,16 +18,17 @@ Value
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | **Name**   |  **Type**   | **Default** | **Description**                                                              |
 +============+=============+=============+==============================================================================+
-| type       | ``string``  | ``"none"``  | Box shadow type                                                              |
+| type       | ``string``  | ``"none"``  | Border style.                                                                |
 |            |             |             ||                                                                             |
-|            |             |             || Allowed types:                                                              |
+|            |             |             || Allowed styles:                                                             |
 |            |             |             || - ``"none"``                                                                |
-|            |             |             || - ``"inset"``                                                               |
-|            |             |             || - ``"outset"``                                                              |
+|            |             |             || - ``"solid"``                                                               |
+|            |             |             || - ``"dashed"``                                                              |
+|            |             |             || - ``"dotted"``                                                              |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | hex        | ``string``  | ``#000000`` | Color code in ``HEX`` format.                                                |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| opacity    | ``number``  | ``1``       | Opacity value from ``0`` to ``1``                                            |
+| opacity    | ``number``  | ``1``       | Opacity value from ``0`` to ``1``.                                           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | palette    | ``string``  | ``""``      | Specify specific palette value                                               |
 |            |             |             ||                                                                             |
@@ -41,13 +42,27 @@ Value
 |            |             |             || - ``"color7"``                                                              |
 |            |             |             || - ``"color8"``                                                              |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| blur       | ``number``  | ``0``       | Box shadow blur value, that is a positive number                             |
+| widthType  | ``string``  | ``grouped`` | Group all border width values under a single value,                          |
+|            |             |             | or split them by edge.                                                       |
+|            |             |             ||                                                                             |
+|            |             |             || Allowed values:                                                             |
+|            |             |             || - ``grouped``                                                               |
+|            |             |             || - ``ungrouped``                                                             |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| spread     | ``number``  | ``0``       | Box shadow spread value, that is a positive number                           |
+| width      | ``number``  | ``0``       | General value for all 4 border edges.                                        |
+|            |             |             || This value is used when ``widthType`` is ``grouped``.                       |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| vertical   | ``number``  | ``0``       | Box shadow vertical value, number                                            |
+| topWidth   | ``number``  | ``0``       | This value modified top border edge.                                         |
+|            |             |             || This value is used when ``widthType`` is ``ungrouped``.                     |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| horizontal | ``number``  | ``0``       | Box shadow horizontal value, number                                          |
+| rightWidth | ``number``  | ``0``       | This value modified right border edge.                                       |
+|            |             |             || This value is used when ``widthType`` is ``ungrouped``.                     |
++------------+-------------+-------------+------------------------------------------------------------------------------+
+| bottomWidth| ``number``  | ``0``       | This value modified bottom border edge.                                      |
+|            |             |             || This value is used when ``widthType`` is ``ungrouped``.                     |
++------------+-------------+-------------+------------------------------------------------------------------------------+
+| leftWidth  | ``number``  | ``0``       | This value modified left border edge.                                        |
+|            |             |             || This value is used when ``widthType`` is ``ungrouped``.                     |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
 Minimal Usage
@@ -56,8 +71,8 @@ Minimal Usage
 .. code-block:: javascript
 
     {
-      id: "boxShadow",
-      type: "boxShadow"
+      id: "border",
+      type: "border"
     }
 
 Usage
@@ -66,19 +81,21 @@ Usage
 .. code-block:: javascript
 
     {
-      id: "boxShadow",
-      type: "boxShadow"
+      id: "border",
+      type: "border"
       config: {
         opacity: true,
       },
       value: {
-        type: "outset",
+        style: "dashed",
         hex: "#000000",
-        opacity: 1,
+        opacity: 0.5,
         palette: "",
-        blur: 4,
-        spread: 2,
-        vertical: 1,
-        horizontal: 1,
+        widthType: "ungrouped",
+        width: 1,
+        topWidth: 1,
+        rightWidth: 1,
+        bottomWidth: 1,
+        leftWidth: 1,
       }
     }

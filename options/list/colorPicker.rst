@@ -23,8 +23,8 @@ Value
 | opacity  | ``number``  | ``1``       | Opacity value from ``0`` to ``1``    |
 +----------+-------------+-------------+--------------------------------------+
 | palette  | ``string``  | ``""``      | Specify specific palette value       |
-|          |             |             || Allowed palette values:             |
 |          |             |             ||                                     |
+|          |             |             || Allowed palette values:             |
 |          |             |             || - ``"color1"``                      |
 |          |             |             || - ``"color2"``                      |
 |          |             |             || - ``"color3"``                      |
