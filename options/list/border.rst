@@ -72,7 +72,7 @@ Minimal Usage
 
     {
       id: "border",
-      type: "border"
+      type: "border-dev"
     }
 
 Usage
@@ -82,7 +82,7 @@ Usage
 
     {
       id: "border",
-      type: "border"
+      type: "border-dev"
       config: {
         opacity: true,
       },

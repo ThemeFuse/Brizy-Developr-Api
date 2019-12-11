@@ -43,7 +43,7 @@ Minimal Usage
 
     {
       id: "color",
-      type: "colorPicker",
+      type: "colorPicker-dev",
     }
 
 Usage
@@ -53,7 +53,7 @@ Usage
 
     {
       id: "color",
-      type: "colorPicker",
+      type: "colorPicker-dev",
       config: {
         opacity: false,
       },

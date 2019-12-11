@@ -57,7 +57,7 @@ Minimal Usage
 
     {
       id: "boxShadow",
-      type: "boxShadow"
+      type: "boxShadow-dev"
     }
 
 Usage
@@ -67,7 +67,7 @@ Usage
 
     {
       id: "boxShadow",
-      type: "boxShadow"
+      type: "boxShadow-dev"
       config: {
         opacity: true,
       },
