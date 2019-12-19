@@ -8,4 +8,5 @@ Options
     list/border
     list/boxShadow
     list/colorPicker
+    list/imageUpload
     list/typography
