@@ -37,7 +37,7 @@ Value
 
 
 Minimal Usage
------
+-------------
 
 .. code-block:: javascript
 
