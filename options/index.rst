@@ -9,4 +9,5 @@ Options
     list/boxShadow
     list/colorPicker
     list/imageUpload
+    list/inputText
     list/typography
