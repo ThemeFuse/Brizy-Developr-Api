@@ -1,7 +1,7 @@
-Multi Select
-============
+Select
+======
 
-Multi select option type.
+Select option type.
 
 Config
 ------
@@ -23,7 +23,7 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | scroll     | ``number``  | ``5``       | Specify from what number of items to apply scroll.                           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| search     | ``boolean`` | ``true``    | Enable or disable search feature.                                            |
+| search     | ``boolean`` | ``false``   | Enable or disable search feature.                                            |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | choices    | ``array``   |             | List of items to choose from. Please checkout *Choices structure*.           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
@@ -31,11 +31,11 @@ Config
 Value
 -----
 
-+---------------+-------------+-------------+---------------------------------------------------------------------------+
-| **Name**      |  **Type**   | **Default** | **Description**                                                           |
-+===============+=============+=============+===========================================================================+
-| value         | ``array``   |             | Array of `string` or `number` value.                                      |
-+---------------+-------------+-------------+---------------------------------------------------------------------------+
++---------------+-------------------+-------------+---------------------------------------------------------------------+
+| **Name**      |  **Type**         | **Default** | **Description**                                                     |
++===============+===================+=============+=====================================================================+
+| value         | ``string|number`` |             | A `string` or `number` value.                                       |
++---------------+-------------------+-------------+---------------------------------------------------------------------+
 
 Choices structure
 -----------------
@@ -43,7 +43,7 @@ Choices structure
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
 | **Name**      |  **Type**         | **Default** | **Description**                                                     |
 +===============+===================+=============+=====================================================================+
-| value         | ``string|number`` | Any `string` or `number` values.                                                  |
+| value         | ``string|number`` | Any `string` or `number` value.                                                   |
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
 | title         | ``string``        | A valid value title.                                                              |
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
@@ -67,13 +67,13 @@ needs to be fetched from an API.
     // ...
 
     {
-      id: "names",
-      type: "multiSelect-dev",
+      id: "name",
+      type: "select-dev",
       config: {
         choices: fetchNames
       },
       value: {
-        value: ["john", "andy"],
+        value: "john",
       }
     },
 
@@ -85,7 +85,7 @@ Minimal Usage
 
     {
       id: "names",
-      type: "multiSelect-dev"
+      type: "select-dev"
     }
 
 Usage
@@ -94,13 +94,13 @@ Usage
 .. code-block:: javascript
 
     {
-      id: "names",
-      type: "multiSelect-dev",
+      id: "name",
+      type: "select-dev",
       config: {
         size: "medium",
         items: 5,
         scroll: 5,
-        placeholder: "Select names",
+        placeholder: "Select name",
         search: true,
         choices: [
           { value: "john", title: "John" },
@@ -109,6 +109,6 @@ Usage
         ]
       },
       value: {
-        value: ["john", "andy"],
+        value: "john",
       }
     },

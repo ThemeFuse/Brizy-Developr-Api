@@ -11,4 +11,5 @@ Options
     list/imageUpload
     list/inputText
     list/multiSelect
+    list/select
     list/typography
