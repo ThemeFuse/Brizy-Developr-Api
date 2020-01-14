@@ -10,4 +10,5 @@ Options
     list/colorPicker
     list/imageUpload
     list/inputText
+    list/multiSelect
     list/typography

@@ -46,7 +46,7 @@ Usage
 
     {
       id: "title",
-      type: "inputText-dev"
+      type: "inputText-dev",
       config: {
         size: "short",
         placeholder: "Insert item title"
