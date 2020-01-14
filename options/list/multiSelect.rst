@@ -9,9 +9,9 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | **Name**   |  **Type**   | **Default** | **Description**                                                              |
 +============+=============+=============+==============================================================================+
-| size       | ``string``  | ``""``      | Specify the input size.                                                      |
+| size       | ``string``  | ``"medium"``| Specify the input size.                                                      |
 |            |             |             ||                                                                             |
-|            |             |             || There are 3 sizes:                                                          |
+|            |             |             || There are 4 sizes:                                                          |
 |            |             |             || - ``"short"``, for short input.                                             |
 |            |             |             || - ``"medium"``, for normal input.                                           |
 |            |             |             || - ``"large"``, for a large input.                                           |
@@ -25,8 +25,7 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | search     | ``boolean`` | ``true``    | Enable or disable search feature.                                            |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| choices    | ``array``   |             | List of items to choose from.                                                |
-|            |             |             || Please checkout *Choices structure*.                                        |
+| choices    | ``array``   |             | List of items to choose from. Please checkout *Choices structure*.           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
 Value
