@@ -19,8 +19,6 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | placeholder| ``string``  | ``""``      | Specify input placeholder.                                                   |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
-| items      | ``number``  |             | Specify maximum numbers of items that can be selected                        |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
 | scroll     | ``number``  | ``5``       | Specify from what number of items to apply scroll.                           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | search     | ``boolean`` | ``false``   | Enable or disable search feature.                                            |
@@ -98,7 +96,6 @@ Usage
       type: "select-dev",
       config: {
         size: "medium",
-        items: 5,
         scroll: 5,
         placeholder: "Select name",
         search: true,
