@@ -12,5 +12,6 @@ Options
     list/inputText
     list/multiSelect
     list/select
+    list/slider
     list/switch
     list/typography
