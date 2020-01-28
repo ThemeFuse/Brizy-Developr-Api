@@ -14,4 +14,5 @@ Options
     list/select
     list/slider
     list/switch
+    list/toggle
     list/typography
