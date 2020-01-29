@@ -11,6 +11,7 @@ Options
     list/imageUpload
     list/inputText
     list/multiSelect
+    list/popover
     list/select
     list/slider
     list/switch
