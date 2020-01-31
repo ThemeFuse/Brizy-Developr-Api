@@ -3,6 +3,15 @@ Input Text
 
 Text input option type.
 
+Fields
+------
+
++------------+-------------+-------------+------------------------------------------------------------------------------+
+| **Name**   |  **Type**   | **Default** | **Description**                                                              |
++============+=============+=============+==============================================================================+
+| placeholder| ``string``  | ``""``      | Specify input placeholder.                                                   |
++------------+-------------+-------------+------------------------------------------------------------------------------+
+
 Config
 ------
 
@@ -15,8 +24,6 @@ Config
 |            |             |             || - ``"short"``, for short input.                                             |
 |            |             |             || - ``"medium"``, for normal input.                                           |
 |            |             |             || - ``"large"``, for full width input.                                        |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| placeholder| ``string``  | ``""``      | Specify input placeholder.                                                   |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
 Value
@@ -45,11 +52,12 @@ Usage
 .. code-block:: javascript
 
     {
+      label: "Title",
       id: "title",
       type: "inputText-dev",
+      placeholder: "Insert item title",
       config: {
-        size: "short",
-        placeholder: "Insert item title"
+        size: "large",
       },
       value: {
         value: "Item 1"
