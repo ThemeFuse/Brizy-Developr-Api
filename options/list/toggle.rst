@@ -42,8 +42,27 @@ Minimal Usage
 
     {
       id: "align",
-      type: "toggle-dev"
-    }
+      type: "toggle-dev",
+      config: {
+        choices: [
+          {
+            icon: "nc-text-align-left",
+            title: t("Left"),
+            value: "left"
+          },
+          {
+            icon: "nc-text-align-center",
+            title: t("Center"),
+            value: "center"
+          },
+          {
+            icon: "nc-text-align-right",
+            title: t("Right"),
+            value: "right"
+          }
+        ]
+      }
+    },
 
 Usage
 -----
@@ -54,7 +73,7 @@ Usage
       id: "align",
       type: "toggle-dev",
       config: {
-        units: [
+        choices: [
           {
             icon: "nc-text-align-left",
             title: t("Left"),
