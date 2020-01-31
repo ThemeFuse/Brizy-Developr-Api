@@ -76,9 +76,7 @@ needs to be fetched from an API.
     {
       id: "name",
       type: "select-dev",
-      config: {
-        choices: fetchNames
-      },
+      choices: fetchNames
       value: {
         value: "john",
       }
@@ -93,6 +91,11 @@ Minimal Usage
     {
       id: "names",
       type: "select-dev"
+      choices: [
+        { value: "john", title: "John" },
+        { value: "andy", title: "Andy" },
+        { value: "tom", title: "Tom" }
+      ],
     }
 
 Usage
@@ -108,12 +111,12 @@ Usage
         scroll: 5,
         placeholder: "Select name",
         search: true,
-        choices: [
-          { value: "john", title: "John" },
-          { value: "andy", title: "Andy" },
-          { value: "tom", title: "Tom" }
-        ]
       },
+      choices: [
+        { value: "john", title: "John" },
+        { value: "andy", title: "Andy" },
+        { value: "tom", title: "Tom" }
+      ],
       value: {
         value: "john",
       }
