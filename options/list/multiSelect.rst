@@ -3,6 +3,17 @@ Multi Select
 
 Multi select option type.
 
+Fields
+------
+
++------------+-------------+--------------+------------------------------------------------------------------------------+
+| **Name**   |  **Type**   | **Required** | **Description**                                                              |
++============+=============+==============+==============================================================================+
+| placeholder| ``string``  |              | Specify input placeholder.                                                   |
++------------+-------------+--------------+------------------------------------------------------------------------------+
+| choices    | ``array``   | ``yes``      | List of items to choose from. Please checkout *Choices structure*.           |
++------------+-------------+--------------+------------------------------------------------------------------------------+
+
 Config
 ------
 
@@ -69,9 +80,7 @@ needs to be fetched from an API.
     {
       id: "names",
       type: "multiSelect-dev",
-      config: {
-        choices: fetchNames
-      },
+      choices: fetchNames
       value: {
         value: ["john", "andy"],
       }
@@ -85,7 +94,12 @@ Minimal Usage
 
     {
       id: "names",
-      type: "multiSelect-dev"
+      type: "multiSelect-dev",
+      choices: [
+        { value: "john", title: "John" },
+        { value: "andy", title: "Andy" },
+        { value: "tom", title: "Tom" }
+      ]
     }
 
 Usage
@@ -102,12 +116,12 @@ Usage
         scroll: 5,
         placeholder: "Select names",
         search: true,
-        choices: [
-          { value: "john", title: "John" },
-          { value: "andy", title: "Andy" },
-          { value: "tom", title: "Tom" }
-        ]
       },
+      choices: [
+        { value: "john", title: "John" },
+        { value: "andy", title: "Andy" },
+        { value: "tom", title: "Tom" },
+      ],
       value: {
         value: ["john", "andy"],
       }
