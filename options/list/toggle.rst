@@ -3,14 +3,14 @@ Toggle
 
 Toggle option type.
 
-Config
+Fields
 ------
 
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| **Name**   |  **Type**   | **Default** | **Description**                                                              |
-+============+=============+=============+==============================================================================+
-| choices    | ``array``   |             | An list of toggle values. Please checkout *Choice structure*.                |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
++------------+-------------+--------------+-----------------------------------------------------------------------------+
+| **Name**   |  **Type**   | **Requires** | **Description**                                                             |
++============+=============+==============+=============================================================================+
+| choices    | ``array``   | ``yes``      | An list of toggle values. Please checkout *Choice structure*.               |
++------------+-------------+--------------+-----------------------------------------------------------------------------+
 
 Value
 -----
@@ -43,25 +43,23 @@ Minimal Usage
     {
       id: "align",
       type: "toggle-dev",
-      config: {
-        choices: [
-          {
-            icon: "nc-text-align-left",
-            title: t("Left"),
-            value: "left"
-          },
-          {
-            icon: "nc-text-align-center",
-            title: t("Center"),
-            value: "center"
-          },
-          {
-            icon: "nc-text-align-right",
-            title: t("Right"),
-            value: "right"
-          }
-        ]
-      }
+      choices: [
+        {
+          icon: "nc-text-align-left",
+          title: t("Left"),
+          value: "left"
+        },
+        {
+          icon: "nc-text-align-center",
+          title: t("Center"),
+          value: "center"
+        },
+        {
+          icon: "nc-text-align-right",
+          title: t("Right"),
+          value: "right"
+        }
+      ]
     },
 
 Usage
@@ -72,25 +70,23 @@ Usage
     {
       id: "align",
       type: "toggle-dev",
-      config: {
-        choices: [
-          {
-            icon: "nc-text-align-left",
-            title: t("Left"),
-            value: "left"
-          },
-          {
-            icon: "nc-text-align-center",
-            title: t("Center"),
-            value: "center"
-          },
-          {
-            icon: "nc-text-align-right",
-            title: t("Right"),
-            value: "right"
-          }
-        ]
-      },
+      choices: [
+        {
+          icon: "nc-text-align-left",
+          title: t("Left"),
+          value: "left"
+        },
+        {
+          icon: "nc-text-align-center",
+          title: t("Center"),
+          value: "center"
+        },
+        {
+          icon: "nc-text-align-right",
+          title: t("Right"),
+          value: "right"
+        }
+      ]
       value: {
         value: "center",
       }
