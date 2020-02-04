@@ -58,6 +58,8 @@ Choices structure
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
 | title         | ``string``        | A valid value title.                                                              |
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
+| icon          | ``string``        | Add a custom icon for select item.                                                |
++---------------+-------------------+-------------+---------------------------------------------------------------------+
 
 Choices as function
 -------------------
@@ -118,9 +120,9 @@ Usage
         search: true,
       },
       choices: [
-        { value: "john", title: "John" },
-        { value: "andy", title: "Andy" },
-        { value: "tom", title: "Tom" },
+        { value: "john", title: "John", icon: "nc-user" },
+        { value: "andy", title: "Andy", icon: "nc-user"  },
+        { value: "tom", title: "Tom", icon: "nc-user"  },
       ],
       value: {
         value: ["john", "andy"],
