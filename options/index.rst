@@ -7,6 +7,7 @@ Options
     introduction
     list/border
     list/boxShadow
+    list/codeMirror
     list/colorPicker
     list/imageUpload
     list/inputText
