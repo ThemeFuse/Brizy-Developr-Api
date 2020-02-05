@@ -17,4 +17,5 @@ Options
     list/switch
     list/tabs
     list/toggle
+    list/textarea
     list/typography
