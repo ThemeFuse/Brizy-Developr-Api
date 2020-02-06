@@ -13,6 +13,12 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | max        | ``number``  | ``100``     | Specifies the maximum value allowed.                                         |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
+| inputMin   | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
+|            |             |             || The value should be always lower or equal then ``min``.                     |
++------------+-------------+-------------+------------------------------------------------------------------------------+
+| inputMax   | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
+|            |             |             || The value should be always equal or greater then ``max``.                   |
++------------+-------------+-------------+------------------------------------------------------------------------------+
 | step       | ``number``  | ``1``       | Specifies the legal number intervals.                                        |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | units      | ``array``   |             | An list of legal units for value, if it has any.                             |
