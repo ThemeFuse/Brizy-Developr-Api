@@ -6,24 +6,30 @@ Slider option type.
 Config
 ------
 
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| **Name**   |  **Type**   | **Default** | **Description**                                                              |
-+============+=============+=============+==============================================================================+
-| min        | ``number``  | ``0``       | Specifies the minimum value allowed.                                         |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| max        | ``number``  | ``100``     | Specifies the maximum value allowed.                                         |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| inputMin   | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
-|            |             |             || The value should be always lower or equal then ``min``.                     |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| inputMax   | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
-|            |             |             || The value should be always equal or greater then ``max``.                   |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| step       | ``number``  | ``1``       | Specifies the legal number intervals.                                        |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
-| units      | ``array``   |             | An list of legal units for value, if it has any.                             |
-|            |             |             | Please checkout *Unit structure*.                                            |
-+------------+-------------+-------------+------------------------------------------------------------------------------+
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| **Name**        |  **Type**   | **Default** | **Description**                                                              |
++=================+=============+=============+==============================================================================+
+| min             | ``number``  | ``0``       | Specifies the minimum value allowed.                                         |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| max             | ``number``  | ``100``     | Specifies the maximum value allowed.                                         |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| inputMin        | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
+|                 |             |             || The value should be always lower or equal then ``min``.                     |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| inputMax        | ``number``  |             | Specifies a different minimum value for input compared to slider.            |
+|                 |             |             || The value should be always equal or greater then ``max``.                   |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| step            | ``number``  | ``1``       | Specifies the legal number intervals.                                        |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| units           | ``array``   |             | An list of legal units for value, if it has any.                             |
+|                 |             |             | Please checkout *Unit structure*.                                            |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| debounceUpdate  | ``boolean`` | ``false``   | Trigger option update only when slider drag ends.                            |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
+| updateRate      | ``number``  | ``16``      | Provide the update rate of the option.                                       |
+|                 |             |             || Useful for performance reasons to prevent unnecessary element renderings.   |
+|                 |             |             || **Note:** ``debounceUpdate`` should be ``false``.                           |
++-----------------+-------------+-------------+------------------------------------------------------------------------------+
 
 Value
 -----
@@ -70,6 +76,7 @@ Usage
         min: 100,
         max: 1000,
         step: 5,
+        debounceUpdate: true,
         units: [
           { value: "px", title: "px" },
           { value: "%", title: "%" },
