@@ -5,6 +5,7 @@ Options
     :hidden:
 
     introduction
+    list/backgroundColor
     list/border
     list/boxShadow
     list/codeMirror
