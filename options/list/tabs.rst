@@ -46,6 +46,10 @@ Tab structure
 +------------+-------------------+-----------------+--------------------------------------------------------------------+
 | title      | ``string``        |                 | Tab handle hover title.                                            |
 +------------+-------------------+-----------------+--------------------------------------------------------------------+
+| position   | ``number``        | 0               | Tab order priority among the other tabs.                           |
+|            |                   |                 || This is useful when you want to arrange tabs when toolbars        |
+|            |                   |                 | are merged                                                         |
++------------+-------------------+-----------------+--------------------------------------------------------------------+
 
 Minimal Usage
 -------------
@@ -107,6 +111,7 @@ Usage
         {
           id: "settings",
           label: "Settings",
+          position: 4,
           options: [
             {
               id: "enableShadow",
@@ -118,6 +123,7 @@ Usage
         {
           id: "bgTab",
           label: "Background",
+          position: 3,
           options: [
             {
               id: "bg",
@@ -128,6 +134,7 @@ Usage
         {
           id: "borderTab",
           label: "Border",
+          position: 2,
           options: [
             {
               id: "border",
@@ -139,6 +146,7 @@ Usage
         {
           id: "shadowTab",
           label: "Shadow",
+          position: 1,
           options: [
             {
               id: "shadow",
