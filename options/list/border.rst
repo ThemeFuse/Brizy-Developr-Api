@@ -6,10 +6,25 @@ Border option type.
 Config
 ------
 
+.. |styles| replace:: ``["none", "solid", "dashed", "dotted"]``
+.. |widths| replace:: ``["grouped", "ungrouped" ]``
+
 +----------+-------------+-------------+--------------------------------------------------------------------------------+
 | **Name** |  **Type**   | **Default** | **Description**                                                                |
 +==========+=============+=============+================================================================================+
 | opacity  | ``boolean`` | ``true``    | Enable or disable **opacity** slider.                                          |
++----------+-------------+-------------+--------------------------------------------------------------------------------+
+| styles   | ``array``   | |styles|    | Provide a list of the supported border styles.                                 |
+|          |             |             || Valid styles:                                                                 |
+|          |             |             || - ``"none"``                                                                  |
+|          |             |             || - ``"solid"``                                                                 |
+|          |             |             || - ``"dashed"``                                                                |
+|          |             |             || - ``"dotted"``                                                                |
++----------+-------------+-------------+--------------------------------------------------------------------------------+
+| width    | ``array``   | |widths|    | Provide a list of the supported border width types.                            |
+|          |             |             || Valid width values:                                                           |
+|          |             |             || - ``"grouped"``                                                               |
+|          |             |             || - ``"ungrouped"``                                                             |
 +----------+-------------+-------------+--------------------------------------------------------------------------------+
 
 Value
@@ -85,6 +100,8 @@ Usage
       type: "border-dev"
       config: {
         opacity: true,
+        styles: ["none", "solid"],
+        width: ["grouped"],
       },
       value: {
         style: "dashed",
@@ -98,4 +115,5 @@ Usage
         bottomWidth: 1,
         leftWidth: 1,
       }
-    }
+   }
+
