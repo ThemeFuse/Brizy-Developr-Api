@@ -10,6 +10,7 @@ Options
     list/boxShadow
     list/codeMirror
     list/colorPicker
+    list/group
     list/imageUpload
     list/inputText
     list/multiSelect
