@@ -16,6 +16,7 @@ Options
     list/multiSelect
     list/number
     list/popover
+    list/radioGroup
     list/select
     list/slider
     list/switch
