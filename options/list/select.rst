@@ -28,7 +28,7 @@ Config
 |            |             |             || - ``"short"``, for short input.                                             |
 |            |             |             || - ``"medium"``, for normal input.                                           |
 |            |             |             || - ``"large"``, for a large input.                                           |
-|            |             |             || - ``"full"``, for full width input.                                         |
+|            |             |             || - ``"auto"``, to auto width input.                                          |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | scroll     | ``number``  | ``5``       | Specify from what number of items to apply scroll.                           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
