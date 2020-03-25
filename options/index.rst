@@ -13,6 +13,7 @@ Options
     list/group
     list/imageUpload
     list/inputText
+    list/internalLink
     list/multiSelect
     list/number
     list/popover
