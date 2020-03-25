@@ -57,33 +57,6 @@ Choices structure
 | icon          | ``string``        | Add a custom icon for select item.                                                |
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
 
-Choices as function
--------------------
-Also the ``choices`` key can be a function that returns a promise of choices. This is use full in case the choices
-needs to be fetched from an API.
-
-
-.. code-block:: javascript
-
-    /**
-     * @param {string} s, search item
-     * @return {Promise<{title: string, value: string}[]>}
-     */
-    const fetchNames = s => fetch(`http://some.resource/?q=${s}`).then(users =>
-      users.map(user => ({ title: user.name, value: user.id }))
-    );
-
-    // ...
-
-    {
-      id: "name",
-      type: "select-dev",
-      choices: fetchNames
-      value: {
-        value: "john",
-      }
-    },
-
 
 Minimal Usage
 -------------
