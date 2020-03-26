@@ -14,8 +14,6 @@ Fields
 | choices    | ``array``   | ``yes``       | List of items to choose from. Please checkout *Choices structure*.         |
 +------------+-------------+---------------+----------------------------------------------------------------------------+
 
-Select option type.
-
 Config
 ------
 
