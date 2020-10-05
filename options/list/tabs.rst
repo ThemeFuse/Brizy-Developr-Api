@@ -58,7 +58,7 @@ Minimal Usage
 
     {
       id: "coloTabs",
-      type: "tabs-dev",
+      type: "tabs",
       tabs: [
         {
           id: "bgTab",
@@ -66,7 +66,7 @@ Minimal Usage
           options: [
             {
               id: "bg",
-              type: "colorPicker-dev"
+              type: "colorPicker"
             }
           ]
         },
@@ -76,7 +76,7 @@ Minimal Usage
           options: [
             {
               id: "border",
-              type: "border-dev"
+              type: "border"
             }
           ]
         },
@@ -86,7 +86,7 @@ Minimal Usage
           options: [
             {
               id: "shadow",
-              type: "boxShadow-dev"
+              type: "boxShadow"
             }
           ]
         },
@@ -100,7 +100,7 @@ Usage
 
     {
       id: "coloTabs",
-      type: "tabs-dev",
+      type: "tabs",
       config: {
         showSingle: true,
         saveTab: true,
@@ -127,7 +127,7 @@ Usage
           options: [
             {
               id: "bg",
-              type: "colorPicker-dev"
+              type: "colorPicker"
             }
           ]
         },
@@ -138,7 +138,7 @@ Usage
           options: [
             {
               id: "border",
-              type: "border-dev",
+              type: "border",
               disable: v.enableShadow === "off"
             }
           ]
@@ -150,7 +150,7 @@ Usage
           options: [
             {
               id: "shadow",
-              type: "boxShadow-dev"
+              type: "boxShadow"
             }
           ]
         }

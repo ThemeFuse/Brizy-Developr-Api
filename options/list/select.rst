@@ -33,7 +33,7 @@ Config
 | search     | ``boolean`` | ``false``   | Enable or disable search feature.                                            |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
@@ -63,7 +63,7 @@ Minimal Usage
 
     {
       id: "names",
-      type: "select-dev"
+      type: "select"
       choices: [
         { value: "john", title: "John" },
         { value: "andy", title: "Andy" },
@@ -78,7 +78,7 @@ Usage
 
     {
       id: "name",
-      type: "select-dev",
+      type: "select",
       config: {
         size: "medium",
         scroll: 5,

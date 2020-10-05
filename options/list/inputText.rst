@@ -27,7 +27,7 @@ Config
 |            |             |             || - ``"auto"``, for full width input.                                         |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -44,7 +44,7 @@ Minimal Usage
 
     {
       id: "title",
-      type: "inputText-dev"
+      type: "inputText"
     }
 
 Usage
@@ -55,7 +55,7 @@ Usage
     {
       label: "Title",
       id: "title",
-      type: "inputText-dev",
+      type: "inputText",
       placeholder: "Insert item title",
       config: {
         size: "large",

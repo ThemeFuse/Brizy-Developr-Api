@@ -18,8 +18,11 @@ Config
 |            |             |             || - ``"auto"``, for auto width.                                               |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
+
+TODO: 
+should value be integer(option use pageId). What default value should be?
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
 | **Name**      |  **Type**   | **Default** | **Description**                                                           |
@@ -37,7 +40,7 @@ Minimal Usage
 
     {
       id: "page",
-      type: "internalLink-dev"
+      type: "internalLink"
     }
 
 Usage
@@ -48,7 +51,7 @@ Usage
     {
       label: "Page url",
       id: "page",
-      type: "internalLink-dev",
+      type: "internalLink",
       config: {
         size: "large",
       },

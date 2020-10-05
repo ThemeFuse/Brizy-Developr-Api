@@ -12,7 +12,7 @@ Config
 | opacity  | ``boolean`` | ``true``    | Enable or disable **opacity** slider.                                          |
 +----------+-------------+-------------+--------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +------------+-------------+-------------+------------------------------------------------------------------------------+
@@ -57,7 +57,7 @@ Minimal Usage
 
     {
       id: "boxShadow",
-      type: "boxShadow-dev"
+      type: "boxShadow"
     }
 
 Usage
@@ -67,7 +67,7 @@ Usage
 
     {
       id: "boxShadow",
-      type: "boxShadow-dev"
+      type: "boxShadow"
       config: {
         opacity: true,
       },

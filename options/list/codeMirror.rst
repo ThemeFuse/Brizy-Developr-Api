@@ -27,7 +27,7 @@ Config
 |            |             |             || - ``markdown``                                                              |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -44,7 +44,7 @@ Minimal Usage
 
     {
       id: "custom-css",
-      type: "codeMirror-dev"
+      type: "codeMirror"
     }
 
 Usage
@@ -55,7 +55,7 @@ Usage
     {
       label: "Custom CSS",
       id: "custom-css",
-      type: "codeMirror-dev"
+      type: "codeMirror"
       placeholder: "element { color: red }",
       config: {
         language: "css",

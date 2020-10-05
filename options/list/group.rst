@@ -14,17 +14,17 @@ Usage
 
     {
       id: "groupSettings",
-      type: "group-dev",
+      type: "group",
       options: [
         {
           id: "start",
           label: "Start",
-          type: "slider-dev",
+          type: "slider",
         },
         {
           id: "end",
           label: "end",
-          type: "slider-dev",
+          type: "slider",
         }
       ]
     }
@@ -36,23 +36,23 @@ where on or few options are visible only if the parent option has specific value
 
     {
       id: "groupSettings",
-      type: "group-dev",
+      type: "group",
       options: [
         {
           id: "enableBoundaries",
           label: "Enable Boundaries",
-          type: "toggle-dev",
+          type: "toggle",
         },
         {
           id: "start",
           label: "Start",
-          type: "slider-dev",
+          type: "slider",
           disabled: v.enableBoundaries !== "on",
         },
         {
           id: "end",
           label: "end",
-          type: "slider-dev",
+          type: "slider",
           disabled: v.enableBoundaries !== "on",
         }
       ]

@@ -12,8 +12,18 @@ Config
 | opacity  | ``boolean`` | ``true``    | Enable or disable **opacity** slider.|
 +----------+-------------+-------------+--------------------------------------+
 
-Value
+DefaultValue 
 -----
+TODO:
+
+Different Keys:
+  - gradientHex -> hex2
+  - gradientOpacity -> opacity2
+  - gradientPalette -> opacity2
+Missing keys: 
+  - start
+  - end
+  - active
 
 +-----------------+-------------+-------------+--------------------------------------+
 | **Name**        |  **Type**   | **Default** | **Description**                      |
@@ -75,7 +85,7 @@ Minimal Usage
 
     {
       id: "",
-      type: "backgroundColor-dev",
+      type: "backgroundColor",
     }
 
 Usage
@@ -85,7 +95,7 @@ Usage
 
     {
       id: "color",
-      type: "backgroundColor-dev",
+      type: "backgroundColor",
       config: {
         opacity: false,
       },

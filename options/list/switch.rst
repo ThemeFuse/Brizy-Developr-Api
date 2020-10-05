@@ -14,7 +14,7 @@ Config
 | off        | ``string|number``  | ``"off"``   | Specify a different value for `off` state.                            |
 +------------+--------------------+-------------+-----------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+--------------------+-------------+--------------------------------------------------------------------+
@@ -31,7 +31,7 @@ Minimal Usage
 
     {
       id: "title",
-      type: "switch-dev"
+      type: "switch"
     }
 
 Usage
@@ -41,7 +41,7 @@ Usage
 
     {
       id: "enable-title",
-      type: "switch-dev",
+      type: "switch",
       config: {
         on: "yes",
         off: "no",

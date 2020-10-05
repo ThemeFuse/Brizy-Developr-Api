@@ -12,7 +12,7 @@ Config
 | opacity  | ``boolean`` | ``true``    | Enable or disable **opacity** slider.|
 +----------+-------------+-------------+--------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +----------+-------------+-------------+--------------------------------------+
@@ -43,7 +43,7 @@ Minimal Usage
 
     {
       id: "color",
-      type: "colorPicker-dev",
+      type: "colorPicker",
     }
 
 Usage
@@ -53,7 +53,7 @@ Usage
 
     {
       id: "color",
-      type: "colorPicker-dev",
+      type: "colorPicker",
       config: {
         opacity: false,
       },

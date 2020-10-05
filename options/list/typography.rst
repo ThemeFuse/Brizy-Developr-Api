@@ -14,8 +14,16 @@ Config
 |            |             |             || Usually this is used for hiding font family select on mobile devices.       |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
+TODO:
+We should explain to user what's fontFamily(we contain id's. should be there a page with list of id -> family)
+
+What should we do with fontFamilyType
+
+Missing keys: 
+  - fontStyle
+  - fontFamilyType
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
 | **Name**      |  **Type**   | **Default** | **Description**                                                           |
@@ -50,7 +58,7 @@ Minimal Usage
 
     {
       id: "typography",
-      type: "typography-dev"
+      type: "typography"
     }
 
 Usage
@@ -60,7 +68,7 @@ Usage
 
     {
       id: "typography",
-      type: "typography-dev"
+      type: "typography"
       config: {
         fontFamily: false,
       },
