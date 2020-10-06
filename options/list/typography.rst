@@ -17,18 +17,12 @@ Config
 DefaultValue
 -----
 TODO:
-We should explain to user what's fontFamily(we contain id's. should be there a page with list of id -> family)
-
-What should we do with fontFamilyType
-
-Missing keys: 
-  - fontStyle
-  - fontFamilyType
+Add all possible font styles into fontStyle description   
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
 | **Name**      |  **Type**   | **Default** | **Description**                                                           |
 +===============+=============+=============+===========================================================================+
-| fontFamily    | ``string``  | ``"lato"``  | Provide font family name.                                                 |
+| fontStyle     | ``string``  | ``""``      | Provide font style name.                                                 |
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
 | fontSize      | ``number``  | ``17``      | Default font size.                                                        |
 +---------------+-------------+-------------+---------------------------------------------------------------------------+

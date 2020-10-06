@@ -14,16 +14,6 @@ Config
 
 DefaultValue 
 -----
-TODO:
-
-Different Keys:
-  - gradientHex -> hex2
-  - gradientOpacity -> opacity2
-  - gradientPalette -> opacity2
-Missing keys: 
-  - start
-  - end
-  - active
 
 +-----------------+-------------+-------------+--------------------------------------+
 | **Name**        |  **Type**   | **Default** | **Description**                      |
