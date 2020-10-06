@@ -52,16 +52,16 @@ Minimal Usage
 
     {
       id: "popoverTypography",
-      type: "popover-dev",
+      type: "popover",
       options: [
         {
           label: "Insert page title",
           id: "title",
-          type: "inputText-dev",
+          type: "inputText",
         },
         {
           id: "title-style",
-          type: "typography-dev",
+          type: "typography",
           config: {
             fontFamily: false,
           }
@@ -76,7 +76,7 @@ Usage
 
     {
       id: "popoverColor",
-      type: "popover-dev",
+      type: "popover",
       config: {
         size: "auto",
         title: t("Colors"),
@@ -89,7 +89,7 @@ Usage
       options: [
         {
           id: "color",
-          type: "colorPicker-dev",
+          type: "colorPicker",
         }
       ]
     }

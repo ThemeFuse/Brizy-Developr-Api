@@ -28,7 +28,7 @@ Config
 |                 |             |             || Useful for performance reasons to prevent unnecessary element renderings.   |
 +-----------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -45,7 +45,7 @@ Minimal Usage
 
     {
       id: "posts",
-      type: "number-dev"
+      type: "number"
     }
 
 Usage
@@ -56,7 +56,7 @@ Usage
     {
       label: "Posts number",
       id: "posts",
-      type: "number-dev",
+      type: "number",
       config: {
         size: "medium",
         min: "20",

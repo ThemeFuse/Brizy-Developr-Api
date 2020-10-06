@@ -39,7 +39,7 @@ Config
 | choices    | ``array``   |             | List of items to choose from. Please checkout *Choices structure*.           |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -69,7 +69,7 @@ Minimal Usage
 
     {
       id: "names",
-      type: "multiSelect-dev",
+      type: "multiSelect",
       choices: [
         { value: "john", title: "John" },
         { value: "andy", title: "Andy" },
@@ -84,7 +84,7 @@ Usage
 
     {
       id: "names",
-      type: "multiSelect-dev",
+      type: "multiSelect",
       config: {
         size: "medium",
         items: 5,

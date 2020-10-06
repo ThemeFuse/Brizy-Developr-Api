@@ -29,7 +29,7 @@ Config
 | lines      | ``number``  | ``5``       | Specify textarea number of visible text lines.                               |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -46,7 +46,7 @@ Minimal Usage
 
     {
       id: "description",
-      type: "textarea-dev"
+      type: "textarea"
     }
 
 Usage
@@ -57,7 +57,7 @@ Usage
     {
       label: "Description",
       id: "description",
-      type: "textarea-dev",
+      type: "textarea",
       placeholder: "Add some description",
       config: {
         size: "large",

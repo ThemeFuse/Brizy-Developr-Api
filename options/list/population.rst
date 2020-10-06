@@ -32,7 +32,7 @@ Config
 | choices    | ``array``   |             | List of population methods. Check out **Population method** section.         |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
@@ -62,7 +62,7 @@ Usage
 
     {
       id: "titlePopulation",
-      type: "population-dev"
+      type: "population"
       config: {
         choices: [
           { id: "post-id", title: "Post ID" },
@@ -74,7 +74,7 @@ Usage
         {
           id: "title",
           label: "title"
-          type: "inputText-dev"
+          type: "inputText"
         }
       ]
     }
@@ -86,7 +86,7 @@ With icon only
 
     {
       id: "titlePopulation",
-      type: "population-dev"
+      type: "population"
       config: {
         iconOnly: true,
         choices: [

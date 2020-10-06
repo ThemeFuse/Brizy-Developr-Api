@@ -12,7 +12,7 @@ Config
 | edit       | ``boolean`` | ``true``    | Enable or disable capability upload or remove current option image.          |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------+-------------+---------------------------------------------------------------------------+
@@ -31,7 +31,7 @@ Minimal Usage
 
     {
       id: "image",
-      type: "imageUpload-dev"
+      type: "imageUpload"
     }
 
 Usage
@@ -41,7 +41,7 @@ Usage
 
     {
       id: "image",
-      type: "imageUpload-dev"
+      type: "imageUpload"
       config: {
         edit: device === "desktop",
       },

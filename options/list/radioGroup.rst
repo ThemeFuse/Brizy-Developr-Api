@@ -12,7 +12,7 @@ Fields
 | choices    | ``array``   | ``yes``       | List of items to choose from. Please checkout *Choices structure*.         |
 +------------+-------------+---------------+----------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
@@ -42,7 +42,7 @@ Usage
     {
       id: "style",
       label: "Style",
-      type: "radioGroup-dev",
+      type: "radioGroup",
       choices: [
         {
           value: "simple",

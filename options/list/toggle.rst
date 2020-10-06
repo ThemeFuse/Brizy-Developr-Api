@@ -12,7 +12,7 @@ Fields
 | choices    | ``array``   | ``yes``      | An list of toggle values. Please checkout *Choice structure*.               |
 +------------+-------------+--------------+-----------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
 
 +---------------+-------------------+-----------------------------------------------------------------------------------+
@@ -42,7 +42,7 @@ Minimal Usage
 
     {
       id: "align",
-      type: "toggle-dev",
+      type: "toggle",
       choices: [
         {
           icon: "nc-text-align-left",
@@ -69,7 +69,7 @@ Usage
 
     {
       id: "align",
-      type: "toggle-dev",
+      type: "toggle",
       choices: [
         {
           icon: "nc-text-align-left",

@@ -27,8 +27,12 @@ Config
 |          |             |             || - ``"ungrouped"``                                                             |
 +----------+-------------+-------------+--------------------------------------------------------------------------------+
 
-Value
+DefaultValue
 -----
+TODO:
+
+Different Keys:
+  - type -> style
 
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | **Name**   |  **Type**   | **Default** | **Description**                                                              |
@@ -87,7 +91,7 @@ Minimal Usage
 
     {
       id: "border",
-      type: "border-dev"
+      type: "border"
     }
 
 Usage
@@ -97,7 +101,7 @@ Usage
 
     {
       id: "border",
-      type: "border-dev"
+      type: "border"
       config: {
         opacity: true,
         styles: ["none", "solid"],
