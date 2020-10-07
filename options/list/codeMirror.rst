@@ -60,7 +60,7 @@ Usage
       config: {
         language: "css",
       },
-      value: {
+      defaultValue: {
         value: "",                              
       }
     }

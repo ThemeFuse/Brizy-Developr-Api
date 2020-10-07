@@ -48,7 +48,7 @@ Usage
       config: {
         edit: device === "desktop",
       },
-      value: {
+      defaultValue: {
         positionX: 25,
         positionX: 25,
       }

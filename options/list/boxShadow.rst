@@ -71,7 +71,7 @@ Usage
       config: {
         opacity: true,
       },
-      value: {
+      defaultValue: {
         type: "outset",
         hex: "#000000",
         opacity: 1,

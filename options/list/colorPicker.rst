@@ -57,7 +57,7 @@ Usage
       config: {
         opacity: false,
       },
-      value: {
+      defaultValue: {
         hex: "#333333",
         opacity: 0.5,
         palette: ""

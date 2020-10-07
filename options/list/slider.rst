@@ -82,7 +82,7 @@ Usage
           { value: "%", title: "%" },
         ]
       },
-      value: {
+      defaultValue: {
         value: 500,
         unit: "px",
       }

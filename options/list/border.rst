@@ -29,15 +29,11 @@ Config
 
 DefaultValue
 -----
-TODO:
-
-Different Keys:
-  - type -> style
 
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | **Name**   |  **Type**   | **Default** | **Description**                                                              |
 +============+=============+=============+==============================================================================+
-| type       | ``string``  | ``"none"``  | Border style.                                                                |
+| style       | ``string``  | ``"none"``  | Border style.                                                                |
 |            |             |             ||                                                                             |
 |            |             |             || Allowed styles:                                                             |
 |            |             |             || - ``"none"``                                                                |
@@ -107,7 +103,7 @@ Usage
         styles: ["none", "solid"],
         width: ["grouped"],
       },
-      value: {
+      defaultValue: {
         style: "dashed",
         hex: "#000000",
         opacity: 0.5,

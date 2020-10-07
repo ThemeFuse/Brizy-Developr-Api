@@ -90,7 +90,7 @@ Usage
         { value: "andy", title: "Andy", icon: "nc-user" },
         { value: "tom", title: "Tom", icon: "nc-user" }
       ],
-      value: {
+      defaultValue: {
         value: "john",
       }
     },

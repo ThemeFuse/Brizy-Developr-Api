@@ -87,7 +87,7 @@ Usage
           value: "right"
         }
       ]
-      value: {
+      defaultValue: {
         value: "center",
       }
     },

@@ -62,7 +62,7 @@ Usage
       config: {
         size: "large",
       },
-      value: {
+      defaultValue: {
         value: "There's no description"
       }
     }

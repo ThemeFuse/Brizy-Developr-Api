@@ -66,7 +66,7 @@ Usage
       config: {
         fontFamily: false,
       },
-      value: {
+      defaultValue: {
         fontFamily: "lato",
         fontSize: "11",
         fontWeight: "700",

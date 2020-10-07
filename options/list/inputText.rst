@@ -60,7 +60,7 @@ Usage
       config: {
         size: "large",
       },
-      value: {
+      defaultValue: {
         value: "Item 1"
       }
     }

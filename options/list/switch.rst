@@ -46,7 +46,7 @@ Usage
         on: "yes",
         off: "no",
       },
-      value: {
+      defaultValue: {
         value: "yes"
       }
     }
