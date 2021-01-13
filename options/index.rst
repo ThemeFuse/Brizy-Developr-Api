@@ -11,6 +11,7 @@ Options
     list/codeMirror
     list/colorPicker
     list/group
+    list/iconPicker
     list/imageUpload
     list/inputText
     list/internalLink
