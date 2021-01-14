@@ -12,6 +12,7 @@ Options
     list/colorPicker
     list/group
     list/iconPicker
+    list/iconsPicker
     list/imageUpload
     list/inputText
     list/internalLink
