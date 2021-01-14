@@ -3,13 +3,13 @@ Icon Picker
 
 Icon Picker option type.
 
-Config
+Fields
 ------
 
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 | **Name**   |  **Type**   | **Default** | **Description**                                                              |
 +============+=============+=============+==============================================================================+
-| icons      | ``array``   | `[]`        | Provide a list of icons with id                                              |
+| choices    | ``array``   | `[]`        | Provide a list of icons with id                                              |
 |            |             |             ||                                                                             |
 |            |             |             || The id will be used to save the selected icon                               |
 +------------+-------------+-------------+------------------------------------------------------------------------------+
@@ -32,26 +32,28 @@ Minimal Usage
     {
       id: "item",
       type: "iconPicker-dev",
-      config: {
-        icons: [
-          {
-            id: "corner",
-            icon: "nc-corners-round",
-            title: "Corner"
-          },
-          {
-            id: "bounce",
-            icon: "nc-pin",
-            title: "Bounce"
-          },
-          {
-            id: "fade",
-            icon: "nc-right-arrow-filled",
-            title: "Fade"
-          }
-        ]
-      }
-    }
+      choices: [
+        {
+          value: "corner",
+          icon: "nc-corners-round",
+          title: "Corner"
+        },
+        {
+          value: "bounce",
+          icon: "nc-pin",
+          title: "Bounce"
+        },
+        {
+          value: "fade",
+          icon: "nc-right-arrow-filled",
+          title: "Fade"
+        },
+        {
+          value: "corner2",
+          icon: "nc-corners-round",
+          title: "Corner"
+        }
+      ]
 
 Usage
 -----
@@ -59,29 +61,31 @@ Usage
 .. code-block:: javascript
 
     {
-      label: "Pick item",
-      id: "item",
+      id: "test",
       type: "iconPicker-dev",
       defaultValue: {
         value: "bounce"
       },
-      config: {
-        icons: [
-          {
-            id: "corner",
-            icon: "nc-corners-round",
-            title: "Corner"
-          },
-          {
-            id: "bounce",
-            icon: "nc-pin",
-            title: "Bounce"
-          },
-          {
-            id: "fade",
-            icon: "nc-right-arrow-filled",
-            title: "Fade"
-          }
-        ]
-      }
+      choices: [
+        {
+          value: "corner",
+          icon: "nc-corners-round",
+          title: "Corner"
+        },
+        {
+          value: "bounce",
+          icon: "nc-pin",
+          title: "Bounce"
+        },
+        {
+          value: "fade",
+          icon: "nc-right-arrow-filled",
+          title: "Fade"
+        },
+        {
+          value: "corner2",
+          icon: "nc-corners-round",
+          title: "Corner"
+        }
+      ]
     }
