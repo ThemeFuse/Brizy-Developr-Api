@@ -17,6 +17,7 @@ Options
     list/imageUpload
     list/inputText
     list/internalLink
+    list/margin
     list/multiSelect
     list/number
     list/padding
