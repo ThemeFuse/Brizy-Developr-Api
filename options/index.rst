@@ -10,6 +10,7 @@ Options
     list/boxShadow
     list/codeMirror
     list/colorPicker
+    list/corners
     list/group
     list/iconPicker
     list/iconsPicker
