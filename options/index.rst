@@ -19,6 +19,7 @@ Options
     list/internalLink
     list/multiSelect
     list/number
+    list/padding
     list/popover
     list/population
     list/radioGroup

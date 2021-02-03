@@ -1,7 +1,7 @@
-Corners
+Padding
 =======
 
-`corners-dev` option type.
+`padding-dev` option type.
 
 DefaultValue
 -----
@@ -9,37 +9,37 @@ DefaultValue
 .. |grouped| replace:: ``"grouped"``
 .. |type| replace::    ``"grouped"``, ``"ungrouped"``
 .. |unit| replace::    ``"px"``
-.. |units| replace::    ``"px"``
+.. |units| replace::    ``"px"``, ``"%"``
 
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 | **Name**       |  **Type**   | **Default** | **Description**                                                          |
 +================+=============+=============+==========================================================================+
-| type           | |type|      | |grouped|   | Corner type.                                                             |
+| type           | |type|      | |grouped|   | Padding type.                                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 | value          | ``number``  | ``0``       | Grouped value.                                                           |
-|                |             |             || Should be a natural number.                                             |
+|                |             |             || Should be a positive number.                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 | unit           | |units|     | |unit|      | Grouped unit.                                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| topLeft        | ``number``  | ``0``       | TopLeft value.                                                           |
-|                |             |             || Should be a natural number.                                             |
+| top            | ``number``  | ``0``       | Top value.                                                               |
+|                |             |             || Should be a positive number.                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| topLeftUnit    | |units|     | |unit|      | TopLeft unit.                                                            |
+| topUnit        | |units|     | |unit|      | Top unit.                                                                |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| topRight       | ``number``  | ``0``       | TopRight value.                                                          |
-|                |             |             || Should be a natural number.                                             |
+| right          | ``number``  | ``0``       | Right value.                                                             |
+|                |             |             || Should be a positive number.                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| topRightUnit   | |units|     | |unit|      | TopRight unit.                                                           |
+| rightUnit      | |units|     | |unit|      | Right unit.                                                              |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| bottomLeft     | ``number``  | ``0``       | BottomLeft value.                                                        |
-|                |             |             || Should be a natural number.                                             |
+| bottom         | ``number``  | ``0``       | Bottom value.                                                            |
+|                |             |             || Should be a positive number.                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| bottomLeftUnit | |units|     | |unit|      | BottomLeft unit.                                                         |
+| bottomUnit     | |units|     | |unit|      | Bottom unit.                                                             |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| bottomRight    | ``number``  | ``0``       | BottomRight value.                                                       |
-|                |             |             || Should be a natural number.                                             |
+| left           | ``number``  | ``0``       | Left value.                                                              |
+|                |             |             || Should be a positive number.                                            |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
-| bottomRightUnit| |units|     | |unit|      | BottomRight unit.                                                        |
+| leftUnit       | |units|     | |unit|      | Left unit.                                                               |
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 
 Minimal Usage
@@ -48,8 +48,8 @@ Minimal Usage
 .. code-block:: javascript
 
     {
-      id: "border-radius",
-      type: "corners-dev"
+      id: "padding",
+      type: "padding-dev"
     }
 
 Usage
@@ -58,15 +58,18 @@ Usage
 .. code-block:: javascript
 
     {
-      id: "border-radius",
-      type: "corners-dev"
+      id: "padding",
+      type: "padding-dev"
       defaultValue: {
         type: "ungrouped",
-        value: 0,
-        topLeft: 5,
-        topRight: 5,
-        bottomRight: 2,
-        bottomLeft: 2,
+        top: 5,
+        topUnit: "px",
+        right: 1,
+        rightUnit: "%",
+        bottom: 5,
+        bottomUnit: "px",
+        left: 1,
+        leftUnit: "%",
       }
    }
 
