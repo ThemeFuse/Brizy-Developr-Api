@@ -1,7 +1,7 @@
 Margin
 =======
 
-`margin-dev` option type.
+``margin-dev`` option type.
 
 DefaultValue
 -----

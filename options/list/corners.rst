@@ -1,7 +1,7 @@
 Corners
 =======
 
-`corners-dev` option type.
+``corners-dev`` option type.
 
 DefaultValue
 -----

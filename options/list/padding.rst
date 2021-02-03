@@ -1,7 +1,7 @@
 Padding
 =======
 
-`padding-dev` option type.
+``padding-dev`` option type.
 
 DefaultValue
 -----
