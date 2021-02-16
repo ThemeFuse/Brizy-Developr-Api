@@ -18,6 +18,7 @@ Options
     list/inputText
     list/internalLink
     list/margin
+    list/motion
     list/multiSelect
     list/number
     list/padding
