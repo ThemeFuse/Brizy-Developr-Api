@@ -1,10 +1,10 @@
 Margin
-=======
+======
 
 ``margin-dev`` option type.
 
 DefaultValue
------
+------------
 
 .. |grouped| replace:: ``"grouped"``
 .. |type| replace::    ``"grouped"``, ``"ungrouped"``

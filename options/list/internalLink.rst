@@ -19,7 +19,7 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
 DefaultValue
------
+------------
 
 TODO: 
 should value be integer(option use pageId). What default value should be?

@@ -7,8 +7,9 @@ Important
 ---------
 Do no use this option by any means. Use the official method of adding population for the options presented in
 **Introduction**. This option was created for some special cases:
- - Backward compatibility, where the option value was saved under a specific id, but population value under another.
- - Case when you want to create a population method for an option that doesn't exist in toolbar, so you have no option to attach your population.
+
+- Backward compatibility, where the option value was saved under a specific id, but population value under another.
+- Case when you want to create a population method for an option that doesn't exist in toolbar, so you have no option to attach your population.
 
 In 99% of the cases the official method will meet all your needs.
 
@@ -33,7 +34,7 @@ Config
 +------------+-------------+-------------+------------------------------------------------------------------------------+
 
 DefaultValue
------
+------------
 
 +---------------+-------------------+-------------+---------------------------------------------------------------------+
 | **Name**      |  **Type**         | **Default** | **Description**                                                     |
