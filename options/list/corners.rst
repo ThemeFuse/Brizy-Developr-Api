@@ -3,13 +3,22 @@ Corners
 
 ``corners-dev`` option type.
 
+Config
+------
+
++------------+--------------------+-----------------+-------------------------------------------------------------------+
+| **Name**   |  **Type**          | **Default**     | **Description**                                                   |
++============+====================+=================+===================================================================+
+| units      | |units| []         | ``["px", "%"]`` | Specify desired units for corners.                                |
++------------+--------------------+-----------------+-------------------------------------------------------------------+
+
 DefaultValue
 ------------
 
 .. |grouped| replace:: ``"grouped"``
 .. |type| replace::    ``"grouped"``, ``"ungrouped"``
 .. |unit| replace::    ``"px"``
-.. |units| replace::    ``"px"``
+.. |units| replace::    ``"px" | "%"``
 
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 | **Name**       |  **Type**   | **Default** | **Description**                                                          |
@@ -59,7 +68,10 @@ Usage
 
     {
       id: "border-radius",
-      type: "corners-dev"
+      type: "corners-dev",
+      config: {
+        units: ["px"]
+      },
       defaultValue: {
         type: "ungrouped",
         value: 0,
