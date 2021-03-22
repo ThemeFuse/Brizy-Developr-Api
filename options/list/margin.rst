@@ -11,6 +11,8 @@ Config
 +============+====================+=================+===================================================================+
 | units      | |units| []         | ``["px", "%"]`` | Specify desired units for margin.                                 |
 +------------+--------------------+-----------------+-------------------------------------------------------------------+
+| edges      | |edges|            | ``all``         | Specify what margin edges should be editable                      |
++------------+--------------------+-----------------+-------------------------------------------------------------------+
 
 DefaultValue
 ------------
@@ -19,6 +21,7 @@ DefaultValue
 .. |type| replace::    ``"grouped"``, ``"ungrouped"``
 .. |unit| replace::    ``"px"``
 .. |units| replace::    ``"px"``, ``"%"``
+.. |edges| replace::    ``"all"``, ``"vertical"``, ``"horizontal"``
 
 +----------------+-------------+-------------+--------------------------------------------------------------------------+
 | **Name**       |  **Type**   | **Default** | **Description**                                                          |
@@ -65,7 +68,8 @@ Usage
       id: "margin",
       type: "margin-dev",
       config: {
-        units: ["px"]
+        units: ["px"],
+        edges: "vertical",
       },
       defaultValue: {
         type: "ungrouped",
