@@ -11,6 +11,11 @@ Config
 +==========+=============+=============+================================================================================+
 | opacity  | ``boolean`` | ``true``    | Enable or disable **opacity** slider.                                          |
 +----------+-------------+-------------+--------------------------------------------------------------------------------+
+| type     | ``string``  |             | Pick one of supported box shadow types. Byr default option will show both.     |
+|          |             |             || Valid types:                                                                  |
+|          |             |             || - ``"inset"``                                                                 |
+|          |             |             || - ``"outset``                                                                 |
++----------+-------------+-------------+--------------------------------------------------------------------------------+
 
 DefaultValue
 ------------
@@ -69,6 +74,7 @@ Usage
       id: "boxShadow",
       type: "boxShadow"
       config: {
+        type: "inset",
         opacity: true,
       },
       defaultValue: {
