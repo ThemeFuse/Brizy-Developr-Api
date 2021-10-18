@@ -11,6 +11,7 @@ Options
     list/codeMirror
     list/colorPicker
     list/corners
+    list/grid
     list/group
     list/iconPicker
     list/iconsPicker
