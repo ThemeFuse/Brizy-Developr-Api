@@ -54,6 +54,7 @@ Minimal Usage
           title: "Corner"
         }
       ]
+    }
 
 Usage
 -----

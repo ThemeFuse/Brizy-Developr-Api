@@ -15,6 +15,7 @@ Options
     list/group
     list/iconPicker
     list/iconsPicker
+    list/iconSetter
     list/imageUpload
     list/inputText
     list/internalLink
