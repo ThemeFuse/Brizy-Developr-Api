@@ -27,6 +27,7 @@ Options
     list/popover
     list/population
     list/radioGroup
+    list/range
     list/select
     list/slider
     list/switch
