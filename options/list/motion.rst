@@ -1,6 +1,7 @@
 Motion
 ======
 
+.. |effects| replace:: ``"vertical"`` | ``"horizontal"`` | ``"transparency"`` | ``"blur"`` | ``"rotate"`` | ``"scale"`` | ``"mouseTrack"`` | ``"mouseTilt"``
 
 ``motion-dev`` option type.
 
@@ -10,8 +11,10 @@ Config
 +------------+--------------------+-----------------+-------------------------------------------------------------------+
 | **Name**   |  **Type**          | **Default**     | **Description**                                                   |
 +============+====================+=================+===================================================================+
-| disabled   | string[]           | ``["blur"]``    | Specify desired units for margin.                                 |
+| disabled   |  Effects[]         | ``[]``          | Specify desired units for margin.                                 |
 +------------+--------------------+-----------------+-------------------------------------------------------------------+
+
+**Effects:** |effects|
 
 Value
 -----
@@ -74,7 +77,10 @@ Usage
 
     {
       id: "motion",
-      type: "motion-dev"
+      type: "motion-dev",
+      config: {
+        disabled: ["rotate"]
+      },
       defaultValue: {
         rotate: {
           direction: "left"

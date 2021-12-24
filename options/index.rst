@@ -34,4 +34,5 @@ Options
     list/tabs
     list/toggle
     list/textarea
+    list/transform
     list/typography
